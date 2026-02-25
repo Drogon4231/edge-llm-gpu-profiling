@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Nsight + profiling outputs
+results/nsight/*.nsys-rep
+results/nsight/*.sqlite
+
+# Large artifacts / installers
+tmp_cusparselt/
+*.deb
+
+# OS junk
+.DS_Store

@@ -1,0 +1,290 @@
+bench,device,dtype,m,n,k,batch,warmup,iters,tag,date,uname,tegra_release,nvpmodel_q,jetson_clocks_show,cpu,ram_gb,torch,cuda_available,cuda,cudnn,gpu,mean_ms,p50_ms,p90_ms,p95_ms,p99_ms,min_ms,max_ms,std_ms,tflops
+gemm,cuda,fp16,1024,1024,1024,8,30,100,sanity,2026-02-24 19:55:13,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,2.875758760003373,3.0477710000704974,3.0769623997155575,3.1004177999217064,3.142610190189444,2.5155629999935627,3.2428170000202954,0.2442630982339027,5.97403002746303
+gemm,cuda,fp16,1024,1024,1024,1,30,150,b_sweep,2026-02-24 19:55:29,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.44334996667690574,0.44266950013116,0.4500993997324258,0.45191584986168887,0.4586421200633049,0.43383600004017353,0.4596619997173548,0.004850940975927929,4.8437663457974125
+gemm,cuda,fp16,1024,1024,1024,2,30,150,b_sweep,2026-02-24 19:55:33,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.7479487600177527,0.7558944998309016,0.7825062000658363,0.7855391998542472,0.7917409302061423,0.7037329995073378,0.7948079998604953,0.028880735467668475,5.742328252403357
+gemm,cuda,fp16,1024,1024,1024,4,30,150,b_sweep,2026-02-24 19:55:38,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,1.4130693000244599,1.3428879999555647,1.5461355996318162,1.5581841498380526,1.695758069879374,1.3040070002898574,1.7924700002186,0.11219985414802003,6.078919548992615
+gemm,cuda,fp16,1024,1024,1024,8,30,150,b_sweep,2026-02-24 19:55:42,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,2.7107941666742166,2.554988499963656,3.043479800224304,3.049940599873662,3.057712439824827,2.5166189996525645,3.0581069998443127,0.22999400528778174,6.337577893299591
+gemm,cuda,fp16,1024,1024,1024,16,30,150,b_sweep,2026-02-24 19:55:47,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,4.611179646675786,4.600585000123829,4.676635100319982,4.701764000137336,4.805767509974539,4.535974999889731,4.8356639998964965,0.052031375280005086,7.451398774448106
+gemm,cuda,fp16,512,512,512,4,30,120,size_sweep,2026-02-24 19:55:53,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.31152871667485066,0.3107290000189096,0.3160825999919325,0.3178707496495917,0.3341426299745217,0.3051929995417595,0.3483299999497831,0.0054117013380013705,3.446686506016997
+gemm,cuda,fp16,1024,1024,1024,4,30,120,size_sweep,2026-02-24 19:55:57,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,1.5128818083166455,1.542430000146851,1.5532972997520118,1.557770799822174,1.60351181011647,1.3116870000958443,2.1628169999457896,0.10106026210876924,5.677862305422163
+gemm,cuda,fp16,2048,2048,2048,4,30,120,size_sweep,2026-02-24 19:56:02,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=54
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,9.681047791696619,9.674431500257924,9.816426299652084,9.886452400218696,9.944491650178097,9.264691999647766,9.956552000716329,0.11636379045214619,7.098351151095475
+gemm,cuda,fp16,1024,1024,1024,1,30,150,b_sweep,2026-02-25 14:22:01,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=46
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.44200023998816806,0.4414535090327263,0.4485611081123352,0.45141503810882566,0.4635343202948569,0.42958100140094757,0.46993400156497955,0.005891080218464788,4.858557651591968
+gemm,cuda,fp16,1024,1024,1024,2,30,150,b_sweep,2026-02-25 14:22:13,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.7624783195058504,0.7714309990406036,0.7907631978392601,0.7972719967365265,0.8177310486137866,0.7042780071496964,1.1278740018606186,0.041620360657651845,5.632904157568044
+gemm,cuda,fp16,1024,1024,1024,4,30,150,b_sweep,2026-02-25 14:22:18,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,1.4343395402034125,1.5058050006628036,1.5430413052439689,1.5483392462134362,1.5633281022310257,1.3128720074892044,1.7799570113420486,0.10558410965733069,5.988773474641722
+gemm,cuda,fp16,1024,1024,1024,8,30,150,b_sweep,2026-02-25 14:22:22,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,3.016451627314091,3.0394030064344406,3.062392808496952,3.0945261441171166,3.447852262109514,2.518539994955063,4.592170000076294,0.19985617921884455,5.695390248739809
+gemm,cuda,fp16,1024,1024,1024,16,30,150,b_sweep,2026-02-25 14:22:27,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,4.607630393505096,4.5959450006484985,4.68577299118042,4.69996500313282,4.767314532697201,4.530696004629135,4.803215995430946,0.04804225431773713,7.45713857961207
+gemm,cuda,fp16,512,512,512,4,30,120,size_sweep,2026-02-25 14:22:33,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,0.3097383417189121,0.3086494952440262,0.3147769972681999,0.3171850010752678,0.32725736021995544,0.3021849989891052,0.34212198853492737,0.0051491727759442035,3.4666093259271786
+gemm,cuda,fp16,1024,1024,1024,4,30,120,size_sweep,2026-02-25 14:22:37,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,1.3981176488101483,1.3605365082621574,1.4916289910674094,1.495379401743412,1.5004961808025836,1.3136390000581741,1.508301004767418,0.07300458188878162,6.143928301963975
+gemm,cuda,fp16,2048,2048,2048,4,30,120,size_sweep,2026-02-25 14:22:42,Linux drogon-desktop 5.15.148-tegra #1 SMP PREEMPT Thu Sep 18 15:08:33 PDT 2025 aarch64 aarch64 aarch64 GNU/Linux,"# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia","NV Power Mode: 15W
+0","SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5
+cpu0:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu1:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu2:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu3:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu4:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+cpu5:  Online=1 Governor=schedutil MinFreq=1497600 MaxFreq=1497600 CurrentFreq=1497600 IdleStates: WFI=0 c7=0 
+GPU MinFreq=612000000 MaxFreq=612000000 CurrentFreq=612000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=2133000000 CurrentFreq=2133000000 FreqOverride=1
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=55
+NV Power Mode: 15W",ARMv8 Processor rev 1 (v8l),7.44,2.5.0a0+872d972e41.nv24.08,True,12.6,90300,Orin,9.682331957792242,9.670369997620583,9.816905197501182,9.89472324848175,9.967942965775729,9.437018990516663,10.489274010062218,0.1316573995080006,7.097409697949393
